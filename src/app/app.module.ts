@@ -10,7 +10,7 @@ import { LandingPageModule } from './features/landing-page/landing-page.module';
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     LandingPageModule
   ],
